@@ -3,6 +3,7 @@ package br.com.fiap.cadastroaluno.model;
 public class AlunoPosGraduacao extends Aluno {
     public AlunoPosGraduacao(String nome, int idade, String cpf, String endereco, String matricula, double nota1, double nota2) {
         super(nome, idade, cpf, endereco, matricula, nota1, nota2);
+        this.tipo = TipoAluno.ALUNO_POS_GRADUACAO;
     }
 
     @Override

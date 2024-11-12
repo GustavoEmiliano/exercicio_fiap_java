@@ -1,11 +1,18 @@
 package br.com.fiap.cadastroaluno.model;
 
 public abstract  class Aluno extends Pessoa implements Calculavel {
+
+    public enum TipoAluno {
+        ALUNO_GRADUACAO,
+        ALUNO_POS_GRADUACAO
+    }
+
     // Atributos
     protected String matricula;
     protected double nota1;
     protected double nota2;
     protected double media;
+    protected TipoAluno tipo;
 
     // Construtor
     public Aluno(String nome, int idade, String cpf, String endereco, String matricula, double nota1, double nota2) {
