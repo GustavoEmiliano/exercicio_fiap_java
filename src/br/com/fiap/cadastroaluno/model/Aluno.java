@@ -79,4 +79,11 @@ public abstract  class Aluno extends Pessoa implements Calculavel {
         media = (nota1 + nota2) / 2;
         return media;
     }
+
+    @Override
+    public String toString() {
+        return "Aluno [nome=" + nome + "]";
+    }
+
+    
 }

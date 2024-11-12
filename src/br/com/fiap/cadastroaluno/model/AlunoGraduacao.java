@@ -7,6 +7,6 @@ public class AlunoGraduacao extends Aluno{
 
     @Override
     public double calcularMedia(double nota1, double nota2) {
-        return super.calcularMedia(nota1, nota2);
+        return (nota1 * 6) + (nota2 * 4) /2 ;
     }
 }
